@@ -1,0 +1,41 @@
+.header {  
+  &__social {    
+    display: flex;
+    justify-content: center;
+    @include media(sm) {
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+    .icon {
+      margin: 0 0.5rem;
+    }
+  }
+  // Navbar
+  &__navbar {  
+    padding: 0;      
+    .navbar-brand {
+      width: 258px;
+    }
+  }
+  // Menu
+  &__menu {
+    .nav-item.active {
+      background-color: #233b47;
+      .nav-link {
+        color: #fff;
+        font-family: $open;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+    }
+    .nav-link {
+      color: #37363b;
+      font-family: $open;
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: all 0.3s ease;      
+    }
+  }
+}

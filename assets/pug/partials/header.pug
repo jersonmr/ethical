@@ -1,0 +1,32 @@
+header.header
+  .container
+    //- Links to social icons
+    .header__social.d-flex.justify-content-end.pt-3
+      a.icon(href="#")
+        img(src="./images/twitter.svg", alt="twitter", width="24")
+      a.icon(href="#")
+        img(src="./images/facebook.svg", alt="facebook", width="24")
+      a.icon(href="#")
+        img(src="./images/instagram.svg", alt="instagram", width="24")
+      a.icon(href="#")
+        img(src="./images/search.svg", alt="search", width="24")
+    //- Navbar
+    nav.navbar.navbar-expand-lg.header__navbar
+      a.navbar-brand(href='#')
+        img(src="./images/header-logo.svg", alt="Header Logo")
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarEthical', aria-controls='navbarEthical', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarEthical.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto.header__menu
+          li.nav-item.active
+            a.nav-link(href='#')
+              | Inicio 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='#') Nosotros          
+          li.nav-item
+            a.nav-link(href='#') Soluciones
+          li.nav-item
+            a.nav-link(href='#') Productos        
+          li.nav-item
+            a.nav-link(href='#') Contáctenos
