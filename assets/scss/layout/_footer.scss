@@ -1,0 +1,38 @@
+.footer {
+  background-color: #233b47;
+  color: #fff;
+  font-family: $open;  
+  text-align: center;
+  @include media(md) {
+    text-align: left;
+  }
+  .row {
+    align-items: center;
+  }
+  &__logo {
+    width: 267px;
+  }
+  &__title {
+    font-size: 30px;
+    @include media(md) {
+      font-size: 40px;
+    }
+  }
+  &__btn {
+    background-color: #fb9400;
+    border: 0;
+    border-radius: 0;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    &:hover {
+      background-color: darken(#fb9400, 10%);
+    }
+  }
+  &__copyright {
+    color: #929ea4;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

@@ -1,14 +1,18 @@
-footer.footer
+footer.footer.py-5
   .container
     .row
-      .col-md-6
+      .col-lg-4.col-xl-5
         a(href="#")
-          img(src="./images/footer-logo.svg", alt="Logo Footer")
-      .col-md-3
-        h2.footer__title
-          | ¿Desea saber más?
-      .col-md-3
-        a.btn.btn-primary
-          | Contáctenos
+          img(src="./images/footer-logo.svg", alt="Logo Footer", class="footer__logo")
+      .col-lg-8.col-xl-7
+        .row
+          .col-lg-6.col-xl-7
+            h2.footer__title.text-center
+              | ¿Desea saber más?
+          .col-lg-6.col-xl-5
+            a(href="#").btn.btn-primary.btn-lg.footer__btn
+              | Contáctenos
+    p.footer__copyright.pt-5
+      | texto correspondiente a la información de copyright y derechos
 
 script(src="./js/app.min.js")

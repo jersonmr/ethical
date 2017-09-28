@@ -14,9 +14,12 @@
 @import "./base/reset";
 
 // Components
+@import "./components/text";
 
 
 // Layout
 @import "./layout/header";
+@import "./layout/footer";
 
 // Pages
+@import "./pages/home";

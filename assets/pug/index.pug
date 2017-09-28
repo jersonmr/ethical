@@ -13,51 +13,52 @@ block content
   section.solutions.py-5
     .container-fluid
       .row
-        h2.text-center.solutions__title Nuestras Soluciones
+        h2.w-100.pt-5.pb-4.ethical-title Nuestras Soluciones
         .card-group
-          .card.text-white.bg-secondary
-            img.card-img-top(src='./images/security.svg', alt='Seguridad')
+          .card
+            .card-img.card-img--item1
+              img.card-img-top(src='./images/security.svg', alt='Seguridad')
+              h4.card-title Seguridad              
             .card-body
-              h4.card-title Card title
-              p.card-text
-                | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              p.card-text
-                small.text-muted Last updated 3 mins ago
-          .card.text-white.bg-secondary
-            img.card-img-top(src='./images/identification.svg', alt='Identificacion')
-            .card-body
-              h4.card-title Card title
-              p.card-text This card has supporting text below as a natural lead-in to additional content.
-              p.card-text
-                small.text-muted Last updated 3 mins ago
-          .card.text-white.bg-secondary
-            img.card-img-top(src='./images/conectivity.svg', alt='Conectividad')
-            .card-body
-              h4.card-title Card title
               p.card-text
                 | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+              a.btn.btn-primary.card-btn(href="#") Conoce más
+          .card
+            .card-img.card-img--item2
+              img.card-img-top(src='./images/identification.svg', alt='Identificacion')
+              h4.card-title Identificación                            
+            .card-body
               p.card-text
-                small.text-muted Last updated 3 mins ago
+                | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+              a.btn.btn-primary.card-btn(href="#") Conoce más
+          .card
+            .card-img.card-img--item3
+              img.card-img-top(src='./images/conectivity.svg', alt='Conectividad')
+              h4.card-title Conectividad
+            .card-body
+              p.card-text
+                | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+              a.btn.btn-primary.card-btn(href="#") Conoce más
 
   //- Ethical action
-  section.action
-    .container
-      h2.action__title Texto destacado
-      h4.action__subtitle Texto secundario destacado
+  section.action.py-5
+    .container.pt-5
+      h2.ethical-title.text-left Texto destacado
+      h4.ethical-title.ethical-title--subtitle.text-left.pt-2 Texto secundario destacado
 
       a.btn.btn-dark.btn-lg.action__btn(href="#") Descubre más
 
   //- Partners
-  section.partners
+  section.partners.py-5
     .container
-      a(href="#")
+      a(href="#").partners__item
         img(src="./images/logo-nemesys.png", alt="Nemesysco")
-      a(href="#")
+      a(href="#").partners__item
         img(src="./images/logo-ensura.png", alt="Ensura")
-      a(href="#")
+      a(href="#").partners__item
         img(src="./images/logo-tech-life.png", alt="Tech Life")
-      a(href="#")
+      a(href="#").partners__item
         img(src="./images/logo-voicepin.png", alt="Voicepin")
-      a(href="#")
+      a(href="#").partners__item
         img(src="./images/logo-sixgill.png", alt="Sixgill")
 
