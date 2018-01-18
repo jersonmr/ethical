@@ -26,61 +26,47 @@
         </nav>
       </div>
     </header>
-    <section class="slider">
-      <div id="particles-js"></div>
-      <div class="wrapper">
-        <div class="left-column">
-          <div class="slider__node"><img src="./images/node-left.png" alt=""/></div>
-        </div>
-        <div class="mid-column">
-          <div class="ball">
-            <div class="ball-inner">
-              <h1 class="text-center slider__title">Ethical<br/><span>360</span></h1>
-            </div>
-          </div>
-        </div>
-        <div class="right-column">
-          <div class="slider__node"><img src="./images/node-right.png" alt=""/></div>
+    <section class="banner">
+      <div class="banner__slider">
+        <div class="container d-flex align-items-center">       
+          <h2 class="banner__title">NOSOTROS</h2>
         </div>
       </div>
     </section>
-    <section class="solutions py-5">
-      <div class="container-fluid">
-        <div class="row">
-          <h2 class="w-100 pt-5 pb-4 ethical-title">Nuestras Soluciones</h2>
-          <div class="card-group">
-            <div class="card">
-              <div class="card-img card-img--item1"><img class="card-img-top" src="./images/security.svg" alt="Seguridad"/>
-                <h4 class="card-title">Seguridad              </h4>
-              </div>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p><a class="btn btn-primary card-btn" href="#">Conoce más</a>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-img card-img--item2"><img class="card-img-top" src="./images/identification.svg" alt="Identificacion"/>
-                <h4 class="card-title">Identificación                            </h4>
-              </div>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p><a class="btn btn-primary card-btn" href="#">Conoce más</a>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-img card-img--item3"><img class="card-img-top" src="./images/conectivity.svg" alt="Conectividad"/>
-                <h4 class="card-title">Conectividad</h4>
-              </div>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p><a class="btn btn-primary card-btn" href="#">Conoce más</a>
-              </div>
+    <section class="nosotros">   
+      <div class="container py-5">
+        <article class="nosotros__item">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="nosotros__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum porro sit perferendis, eos repudiandae incidunt explicabo beatae a, eaque, nostrum alias sint? Veritatis nam consequatur officia vero perferendis sint eveniet.</p>
+              <p class="nosotros__description">Quibusdam ipsa porro praesentium natus dolor illum earum doloremque eligendi fugiat sint esse vero, veritatis molestias obcaecati harum amet, in deleniti reiciendis, quo aliquid optio quis. Maiores iste dicta aspernatur.</p>
+              <p class="nosotros__description">Quam fuga eos pariatur voluptatibus at commodi, nesciunt officia ex ducimus id eligendi consectetur molestias saepe exercitationem minima, cum reiciendis quo corporis fugit soluta maxime qui. Maiores quod totam ad?</p>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
-    <section class="action py-5">
-      <div class="container pt-5">
-        <h2 class="ethical-title text-left">Texto destacado</h2>
-        <h4 class="ethical-title ethical-title--subtitle text-left pt-2">Texto secundario destacado</h4><a class="btn btn-dark btn-lg action__btn" href="#">Descubre más</a>
+    <section class="mvo">
+      <div class="container py-3">
+        <article class="mvo__item mvo__item--mision">
+          <h2 class="mvo__title mvo__title--mision">Misión</h2>
+          <p class="mvo__description mvo__description--mision">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam ipsam architecto rem minima labore voluptatibus vel similique nihil officiis.</p>
+        </article>
+        <article class="mvo__item mvo__item--vision">
+          <h2 class="mvo__title mvo__title--vision">Visión</h2>
+          <p class="mvo__description mvo__description--vision">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non pariatur doloremque, neque ducimus aut, asperiores impedit rerum nulla ipsam unde assumenda perspiciatis cumque doloribus recusandae!</p>
+        </article>
+        <article class="mvo__item mvo__item--objetivos">
+          <h2 class="mvo__title mvo__title--objetivos">Objetivos</h2>
+          <ul class="mvo__description mvo__description--objetivos">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, dignissimos.</li>
+            <li>Harum vero praesentium maxime, saepe ab aperiam itaque atque laboriosam.</li>
+            <li>Quisquam, rem. Sit non quia cupiditate officia, porro quod fugiat.</li>
+            <li>Veniam ullam soluta fugit nam ipsam recusandae, saepe nesciunt tenetur.</li>
+            <li>Saepe et fugit soluta dolorem, distinctio quos magni dicta quae.</li>
+            <li>Ullam incidunt maiores doloribus ut repellendus ipsa voluptate obcaecati tempore?</li>
+          </ul>
+        </article>
       </div>
     </section>
     <section class="partners py-5">
@@ -111,5 +97,26 @@
       </div>
     </footer>
     <script src="./js/app.min.js"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 2000,   
+        navSpeed: true,     
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+      });      
+    </script>
   </body>
 </html>
