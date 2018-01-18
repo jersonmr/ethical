@@ -13648,6 +13648,15 @@ img {
   }
 }
 
+@media (min-width: 992px) {
+  .header__menu .nav-item {
+    margin: 0 0.5rem;
+  }
+  .header__menu .nav-item:last-child {
+    margin-right: 0;
+  }
+}
+
 .header__menu .nav-item.active {
   background-color: #233b47;
 }
@@ -13723,6 +13732,7 @@ img {
 
 .footer__copyright {
   color: #929ea4;
+  font-size: 12px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -13943,9 +13953,15 @@ img {
 }
 
 .nosotros__item {
-  background: url(../images/bg-nosotros.jpg) no-repeat center center;
+  background: #fff;
   background-size: cover;
   border-top: 2px solid #fb9400;
+}
+
+@media screen and (min-width: 992px) {
+  .nosotros__item {
+    background: url(../images/bg-nosotros.jpg) no-repeat center center;
+  }
 }
 
 .nosotros__description {
@@ -14018,9 +14034,15 @@ img {
 }
 
 .soluciones__item {
-  background: url(../images/bg-soluciones.jpg) no-repeat center center;
+  background: #fff;
   background-size: cover;
   border-top: 2px solid #fb9400;
+}
+
+@media screen and (min-width: 992px) {
+  .soluciones__item {
+    background: url(../images/bg-soluciones.jpg) no-repeat center center;
+  }
 }
 
 .soluciones__description {
@@ -14123,7 +14145,7 @@ img {
 }
 
 .contactenos__item {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .contactenos__title {
@@ -14131,7 +14153,7 @@ img {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
